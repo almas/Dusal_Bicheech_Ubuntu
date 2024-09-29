@@ -1,0 +1,68 @@
+
+// Last edited on: 2015/05/28
+// Included Mongolian qwerty keyboard
+// Author "Almas Dusal" <almas@dusal.net>
+// www.dusal.net
+
+partial alphanumeric_keys
+xkb_symbols "mongolianqwerty" {
+
+  name[Group1]= "Mongolian qwerty";
+
+  key <TLDE> { [ Cyrillic_shcha,   Cyrillic_SHCHA,  	grave		] };
+  key <AE01> { [ 1,                exclam,        	asciitilde	] };
+  key <AE02> { [ 2,                at,                  division	] };
+  key <AE03> { [ 3,     	   numerosign,		plusminus	] };
+  key <AE04> { [ 4, 		   U20ae,      		degree		] };
+  key <AE05> { [ 5,                percent,		multiply     	] };
+  key <AE06> { [ 6, 		   colon,      		semicolon	] };
+  key <AE07> { [ 7,		   minus,        	ampersand    	] };
+  key <AE08> { [ 8,		   asterisk,            equal	        ] };
+  key <AE09> { [ 9,                parenleft,          	bracketleft     ] };
+  key <AE10> { [ 0,                parenright,      	bracketright   	] };
+  key <AE11> { [ Cyrillic_sha,     Cyrillic_SHA,       	underscore      ] };
+  key <AE12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, 	plus       	] };
+
+  key <AD01> { [ Cyrillic_o_bar,    Cyrillic_O_bar,     apostrophe      ] };
+  key <AD02> { [ Cyrillic_ie,       Cyrillic_IE,        grave           ] };
+  key <AD03> { [ Cyrillic_e,        Cyrillic_E,        	EuroSign        ] };
+  key <AD04> { [ Cyrillic_er,       Cyrillic_ER,      	registered      ] };
+  key <AD05> { [ Cyrillic_te,       Cyrillic_TE,        trademark       ] };
+  key <AD06> { [ Cyrillic_yu,       Cyrillic_YU,       	yen             ] };
+  key <AD07> { [ Cyrillic_u,        Cyrillic_U,      	doublelowquotemark   ] };
+  key <AD08> { [ Cyrillic_i,        Cyrillic_I,      	leftdoublequotemark  ] };
+  key <AD09> { [ Cyrillic_o,        Cyrillic_O,		rightdoublequotemark] };
+  key <AD10> { [ Cyrillic_pe,       Cyrillic_PE,      	NoSymbol        ] };
+  key <AD11> { [ Cyrillic_ya,       Cyrillic_YA,      	braceleft       ] };
+  key <AD12> { [ Cyrillic_io,       Cyrillic_IO, 	braceright      ] };
+
+  key <AC01> { [ Cyrillic_a,        Cyrillic_A,   	mu              ] };
+  key <AC02> { [ Cyrillic_es,       Cyrillic_ES,     	sterling        ] };
+  key <AC03> { [ Cyrillic_de,       Cyrillic_DE,       	dollar          ] };
+  key <AC04> { [ Cyrillic_yeru,     Cyrillic_YERU,      rightdoublequotemark ] };
+  key <AC05> { [ Cyrillic_ghe,      Cyrillic_GHE,      	Cyrillic_yeru   ] };
+  key <AC06> { [ Cyrillic_ha,       Cyrillic_HA,       	Cyrillic_YERU   ] };
+  key <AC07> { [ Cyrillic_zhe,      Cyrillic_ZHE,       Cyrillic_e      ] };
+  key <AC08> { [ Cyrillic_ka,       Cyrillic_KA,       	Cyrillic_E      ] };
+  key <AC09> { [ Cyrillic_el,       Cyrillic_EL,       	numerosign      ] };
+  key <AC10> { [ Cyrillic_shorti,   Cyrillic_SHORTI,    section         ] };
+  key <AC11> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN,  ellipsis        ] };
+  key <BKSL> { [ Cyrillic_ef,       Cyrillic_EF,	bar             ] };
+
+  key <AB01> { [ Cyrillic_ze,       Cyrillic_ZE,       	emdash          ] };
+  key <AB02> { [ Cyrillic_che,      Cyrillic_CHE,      	endash          ] };
+  key <AB03> { [ Cyrillic_tse,      Cyrillic_TSE,       copyright       ] };
+  key <AB04> { [ Cyrillic_ve,       Cyrillic_VE,       	NoSymbol        ] };
+  key <AB05> { [ Cyrillic_be,       Cyrillic_BE,       	NoSymbol        ] };
+  key <AB06> { [ Cyrillic_en,       Cyrillic_EN,        less            ] };
+  key <AB07> { [ Cyrillic_em,       Cyrillic_EM,       	greater         ] };
+  key <AB08> { [ comma,    	    minus,  		guillemotleft   ] };
+  key <AB09> { [ period, 	    question,		guillemotright  ] };
+  key <AB10> { [ Cyrillic_u_straight,Cyrillic_U_straight,	slash   ] };
+
+  // End alphanumeric section
+
+  key <SPCE> { [ space,             space,             	nobreakspace    ] };
+
+  include "level3(ralt_switch)"
+};
