@@ -1,11 +1,13 @@
 # Dusal custom Mongolian keyboard layouts
 
+
+
 ## Суулгах заавар
 
 ### Арга 1
 
 Terminal-аас доорх тушаалаар ажиллуулж болно.
-bash /home/dd/Downloads/Dusal_bicheech_v3.1.sh
+bash /home/dd/Downloads/Dusal_bicheech.sh
 
 ### Арга 2
 
