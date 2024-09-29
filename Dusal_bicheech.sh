@@ -359,6 +359,8 @@ EOF
 		fi
 	fi
 
+	sudo dpkg-reconfigure xkb-data
+
 	if grep -q "MongolianQWERTY" "/usr/share/X11/xkb/rules/evdev.xml"; then
 		text_msg=$(
 			cat <<EOF
@@ -406,6 +408,9 @@ function uninstall() {
 		sudo rm /usr/share/X11/xkb/symbols/mn
 		sudo mv /usr/share/X11/xkb/symbols/mn.bak /usr/share/X11/xkb/symbols/mn
 	fi
+
+	sudo dpkg-reconfigure xkb-data
+
 	if [[ $1 != "reinstall" ]]; then
 		if [[ ! -e /usr/share/X11/xkb/rules/evdev.xml.bak ]] && ! grep -q "MongolianQWERTY" "/usr/share/X11/xkb/rules/evdev.xml"; then
 			zenity --title="$title" --width=500 --height=200 --info --text="Амжилттай устгагдлаа."
